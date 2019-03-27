@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Virtual Class</title>
+    <link rel="stylesheet" href="../styles/main.css">
+  </head>
+  <body>
+    <div class="container">
+                          <!--header-->
+      <div class="header">
+        <h1>English Language Class</h1>
+      </div>
+
+                          <!--images-->
+      <div class="logos">
+        <img src="../images/HS2.png" alt="Al Hariq Intermediate School">
+        <img src="../images/MOELogo.png" alt="Minstery of Education">
+      </div>
+
+                          <!--nav-->
+      <div>
+        <ul class="nav">
+          <li> <a class="active" href="index.html">Home</a> </li>
+          <li> <a href="alphabet.html">Alphabet</a> </li>
+          <li> <a href="numbers.html">Numbers</a> </li>
+          <li> <a href="grammer.html">Grammer</a> </li>
+          <li> <a href="exrcises.html">Exrcises</a> </li>
+        </ul>
+      </div>
+
+                          <!--content-->
+
+      <div class="content">
+        <button class="down">DOWN</button>
+        <button class="up">UP</button>
+        <div class="line">
+
+        </div>
+        <img class="img4" src="../images/image4.jpeg" alt="">
+        <div class="content2">
+          <h1 class="con1">Welcome to The English Language Class</h1>
+          <p class="con2">Here we are going to learn more about the English Language and we will have fun while learning.</p>
+
+        </div>
+
+      </div>
+
+                          <!--footer-->
+      <div class="footer">
+        <a href="https://twitter.com/HareqSchool" target="_blank" ><img src="../images/twitter-logo.png" alt="Twitter Account"></a>
+        <img src="../images/phone.png" alt="Phone Number" onclick="myNumber()">
+        <p class="phone-number">(xxx)xxx-xxx</p>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $("document").ready(function(){
+        $(".up").click(function(){
+          $(".content2").slideUp(2000);
+        });
+      });
+      $("document").ready(function(){
+        $(".down").click(function(){
+          $(".content2").slideDown(2000);
+        });
+      });
+    </script>
+  </body>
+</html>

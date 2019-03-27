@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Virtual Class</title>
+    <link rel="stylesheet" href="../styles/main.css">
+  </head>
+  <body>
+    <div class="container">
+                          <!--header-->
+      <div class="header">
+        <h1>English Language Class</h1>
+      </div>
+
+                          <!--images-->
+      <!--<div class="logos">
+        <img src="../images/HS2.png" alt="Al Hariq Intermediate School">
+        <img src="../images/MOELogo.png" alt="Minstery of Education">
+      </div>-->
+
+                          <!--nav-->
+      <div>
+        <ul class="nav">
+          <li> <a href="index.html">Home</a> </li>
+          <li> <a href="alphabet.html">Alphabet</a> </li>
+          <li> <a href="numbers.html">Numbers</a> </li>
+          <li> <a class="active" href="grammer.html">Grammer</a> </li>
+          <li> <a href="exrcises.html">Exrcises</a> </li>
+        </ul>
+      </div>
+
+                          <!--content-->
+        <div class="g-container">
+          <div class="past">
+            <div class="front">
+              <h1>PAST</h1>
+            </div>
+            <div class="back">
+              <h1>This is the rules of the past</h1>
+            </div>
+          </div>
+          <div class="present">
+            <div class="front">
+              <h1>PRESENT</h1>
+            </div>
+            <div class="back">
+              <h1>This is the rules of the present</h1>
+            </div>
+          </div>
+          <div class="future">
+            <div class="front">
+              <h1>FUTURE</h1>
+            </div>
+            <div class="back">
+              <h1>This the rules of the Future</h1>
+            </div>
+          </div>
+        </div>
+
+                          <!--footer-->
+      <div class="footer">
+        <a href="https://twitter.com/HareqSchool" target="_blank" ><img src="../images/twitter-logo.png" alt="Twitter Account"></a>
+        <img src="../images/phone.png" alt="Phone Number" onclick="myNumber()">
+        <p class="phone-number">(xxx)xxx-xxx</p>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+
+    <script type="text/javascript">
+
+      //The flip start here
+      $(".past").flip();
+      $(".present").flip();
+      $(".future").flip();
+
+
+    </script>
+  </body>
+</html>
